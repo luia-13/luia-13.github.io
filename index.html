@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Öykü Aksoy - Technical Artist and Sculptor Portfolio">
   <title>Öykü Aksoy - Portfolio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Crimson+Pro&display=swap');
 
     body {
       margin: 0;
-      background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
-      background-color: #2a2a2a;
+      background-image: url('pic/1.jpeg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: #f0f0f0;
       font-family: 'Crimson Pro', serif;
       text-align: center;
@@ -18,10 +22,10 @@
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 1em;
       font-family: 'Cinzel', serif;
-      color: #b8b8b8; /* Gümüş renk */
-      text-shadow: 0px 0px 5px #fff, 0px 0px 10px #ccc, 0px 0px 15px #bbb, 0px 0px 20px #888; /* 3D metalik etkisi */
+      color: #c0c0c0;
+      text-shadow: 3px 3px 10px #000, 0 0 20px #a9a9a9, 0 0 15px #ffffff;
       animation: fadeIn 2s ease-out;
     }
 
@@ -30,6 +34,7 @@
       color: #ddd;
       margin: 10px 0;
       animation: fadeIn 3s ease-out;
+      text-align: center;
     }
 
     a {
@@ -40,8 +45,11 @@
     iframe {
       margin-top: 40px;
       border-radius: 12px;
-      box-shadow: 0 0 25px #900;
+      box-shadow: 0 0 30px rgba(192, 192, 192, 0.6);
       animation: fadeIn 4s ease-out;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     blockquote {
@@ -62,26 +70,48 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; filter: brightness(2); }
+      50% { background-position: 100% 50%; filter: brightness(1.08); }
+      100% { background-position: 0% 50%; filter: brightness(1); }
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Luia</h1>
+  <img src="pic/Lu1.png" alt="Luia Logo" style="width: 333px; height: auto;">
   <p>Technical Artist • Sculptor</p>
-  <p><a href="mailto:oykuaksoy88@gmail.com">Contact Me</a></p>
-
-  <iframe width="720" height="405" 
+  <br>
+  <iframe width="640" height="360" 
     src="https://player.vimeo.com/video/1075205345" 
     frameborder="0" 
     allow="autoplay; fullscreen; picture-in-picture" 
     allowfullscreen>
   </iframe>
+    <p style="margin-top: 40px;"><a href="mailto:oykuaksoy88@gmail.com">Contact Me</a></p>
+
 
   <blockquote>
-    “I sculpt the unseen, and dream the invisible.”  
+    “Void-born. Vision-driven.” 
   </blockquote>
 
   <footer>
+    <br><br><br><br>
     <p>© 2025 Öykü Aksoy. All rights reserved.</p>
   </footer>
 </body>
-</html>
+
