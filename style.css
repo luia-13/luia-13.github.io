@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-image: url('pic/4.jpeg'); /* pic klasöründeki 1.jpeg dosyasını arka plan olarak ekliyoruz */
+  background-size: cover; /* Görselin tüm sayfayı kaplamasını sağlar */
+  background-position: center; /* Görseli ortalar */
+  background-attachment: fixed; /* Sayfa kaydırıldığında görsel sabit kalır */
+  color: #f0f0f0;
+  font-family: 'Crimson Pro', serif;
+  text-align: center;
+  padding: 80px 20px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Cinzel', serif;
+  color: #c0c0c0; /* Gümüş renk */
+  text-shadow: 3px 3px 10px #000, 0 0 20px #a9a9a9, 0 0 15px #ffffff; /* Gümüş ve hafif beyaz gölge */
+  animation: fadeIn 2s ease-out;
+}
+
+p {
+  font-size: 1.2em;
+  color: #ddd;
+  margin: 10px 0;
+  animation: fadeIn 3s ease-out;
+  text-align: center;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+iframe {
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(192, 192, 192, 0.8); /* Hafif gümüş ışıltı */
+  animation: fadeIn 4s ease-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  font-style: italic;
+  color: #bbb;
+  margin-top: 60px;
+  font-size: 1.1em;
+  animation: fadeIn 5s ease-out;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; filter: brightness(1); }
+  50% { background-position: 100% 50%; filter: brightness(1.1); }
+  100% { background-position: 0% 50%; filter: brightness(1); }
+}
+
+
